@@ -20,7 +20,7 @@ public class test extends HttpServlet {
         response.setContentType("text/html; charset=UTF-8");
         String b = request.getParameter("q");
 
-        //try{
+        try{
 
           /*  PrintWriter out = response.getWriter();
             byte[] bytes = b.getBytes(StandardCharsets.ISO_8859_1);
@@ -91,12 +91,12 @@ public class test extends HttpServlet {
             {
                 System.out.println(check + " deleted");
             }
-        //}catch(Exception e){
-            //PrintWriter out = response.getWriter();
-            //out.println("No valid json");
-            //out.println("----------------------");
-            //out.println(e);
-        //}
+        }catch(Exception e){
+            PrintWriter out = response.getWriter();
+            out.println("No valid json");
+            out.println("----------------------");
+            out.println(e);
+        }
 
     }
 
