@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Webserver:war">
+    <output-path>C:/apache-tomcat-9.0.35/webapps</output-path>
+    <root id="archive" name="Webserver_war.war">
+      <element id="artifact" artifact-name="Webserver:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="gson-2.6.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
